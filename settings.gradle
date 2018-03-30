@@ -1,1 +1,1 @@
-include ':app', ':commutils'
+include ':app', ':commutils', ':weibo', 'movie'
