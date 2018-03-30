@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SeeChat</string>
+
+    <string name="bottom_sChat">SChat</string>
+    <string name="bottom_weiBo">WeiBo</string>
+    <string name="bottom_video">Video</string>
+    <string name="bottom_aboutMe">AboutMe</string>
 </resources>

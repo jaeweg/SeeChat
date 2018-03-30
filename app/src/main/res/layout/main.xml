@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        layout="@layout/back_away"
+        android:id="@+id/mActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+    </include>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"
+        android:layout_above="@id/lineView"
+        android:layout_below="@id/mActionBar"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/mLayout"
+        android:background="#e1e0e0"/>
+
+    <include
+        android:id="@+id/mLayout"
+        layout="@layout/tab_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_alignParentBottom="true">
+
+    </include>
+
+</RelativeLayout>
