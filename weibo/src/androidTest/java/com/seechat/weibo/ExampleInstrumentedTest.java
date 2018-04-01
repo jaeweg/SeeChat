@@ -2,7 +2,10 @@ package com.seechat.weibo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
+import android.support.test.filters.MediumTest;
 import android.support.test.runner.AndroidJUnit4;
+
+import com.seechat.weibo.auth.Auth;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,11 +19,26 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
+
+    Context appContext;
+
     @Test
     public void useAppContext() throws Exception {
         // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
+
+        appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.seechat.weibo.test", appContext.getPackageName());
+    }
+
+    @Test
+    public void testGetAccessToken() {
+        Auth auth = new Auth();
+
+    }
+
+    @MediumTest
+    public void ActivityTest() {
+
     }
 }

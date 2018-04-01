@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.test.suitebuilder.annotation.MediumTest;
 import android.view.View;
 
 import com.seechat.commutils.DataBaseHelper;
@@ -66,5 +67,8 @@ public class home extends BaseActivity {
         super.onDestroy();
     }
 
+    @MediumTest
+    public void testActivity(){
 
+    }
 }

@@ -20,5 +20,8 @@ class ExampleInstrumentedTest {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
         assertEquals("com.seechat.seechat", appContext.packageName)
+
     }
+
+
 }
